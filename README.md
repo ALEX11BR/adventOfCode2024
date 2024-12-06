@@ -10,6 +10,15 @@ This can be accomplished, for instance, by:
 - heredocs,
 - typing the input followed by a `^D`.
 
+Most solutions:
+- were submitted within 24 hour of the problem's publishing,
+- use only Python's standard library,
+- run pretty quickly (<1 second).
+
+The solutions for which this doesn't fully apply have a comment at the beginning with details.
+These are:
+- Day 6, part 2: solution takes about 8 seconds to run.
+
 ## Generate code for a new day
 ```sh
 ./generate-ex.sh ${DAY}
