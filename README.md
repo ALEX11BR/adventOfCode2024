@@ -18,6 +18,7 @@ Most solutions:
 The solutions for which this doesn't fully apply have a comment at the beginning with details.
 These are:
 - Day 6, part 2: solution takes about 8 seconds to run.
+- Day 7, part 2: solution takes about 11 seconds to run.
 
 ## Generate code for a new day
 ```sh
