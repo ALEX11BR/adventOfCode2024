@@ -9,7 +9,8 @@ if __name__ == "__main__":
     data = []
     for line in text:
         fields = line.split(": ")
-        data.append((int(fields[0]), [int(num) for num in fields[1].split(" ")]))
+        data.append((int(fields[0]), [int(num)
+                    for num in fields[1].split(" ")]))
 
     ans = 0
     for term, nums in data:

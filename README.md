@@ -19,6 +19,7 @@ The solutions for which this doesn't fully apply have a comment at the beginning
 These are:
 - Day 6, part 2: solution takes about 8 seconds to run.
 - Day 7, part 2: solution takes about 11 seconds to run.
+- Day 9, part 2: solution takes about 3 seconds to run (using CPython; PyPy runs it in about 0.1 seconds).
 
 ## Generate code for a new day
 ```sh
