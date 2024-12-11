@@ -20,6 +20,7 @@ These are:
 - Day 6, part 2: solution takes about 8 seconds to run.
 - Day 7, part 2: solution takes about 11 seconds to run.
 - Day 9, part 2: solution takes about 3 seconds to run (using CPython; PyPy runs it in about 0.1 seconds).
+- Day 11, part 1: solution takes about 2 seconds to run (using CPython; PyPy runs it in about 1 second).
 
 ## Generate code for a new day
 ```sh
