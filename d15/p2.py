@@ -38,7 +38,8 @@ if __name__ == "__main__":
         if not line:
             in_world = False
         elif in_world:
-            world.append(list(line.replace("#", "##").replace("O", "[]").replace(".", "..").replace("@", "@.")))
+            world.append(list(line.replace("#", "##").replace(
+                "O", "[]").replace(".", "..").replace("@", "@.")))
         else:
             actions += line
 
@@ -55,7 +56,8 @@ if __name__ == "__main__":
         new_start = move_point(start, direction)
         can_move = True
         if world[new_start[0]][new_start[1]] in "[]":
-            boxes_to_move = {box_of(new_start, world[new_start[0]][new_start[1]])}
+            boxes_to_move = {
+                box_of(new_start, world[new_start[0]][new_start[1]])}
             new_boxes = set(boxes_to_move)
 
             while new_boxes and can_move:
@@ -68,7 +70,8 @@ if __name__ == "__main__":
                         if world[new_point[0]][new_point[1]] not in "[]":
                             continue
 
-                        new_box = box_of(new_point, world[new_point[0]][new_point[1]])
+                        new_box = box_of(
+                            new_point, world[new_point[0]][new_point[1]])
                         if new_box not in boxes_to_move:
                             boxes_to_move.add(new_box)
                             new_new_boxes.add(new_box)
