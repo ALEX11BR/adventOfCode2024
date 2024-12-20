@@ -24,6 +24,7 @@ These are:
 - Day 14, part 2: solution takes about 5 seconds to run (using CPython; PyPy runs it in about 1 second).
 - Day 19, part 1: solution takes about 24 seconds to run (using CPython; PyPy runs it in about 2 seconds).
 - Day 19, part 2: solution takes about 1.5 seconds to run (using CPython; PyPy runs it in about 0.1 seconds).
+- Day 20, part 2: solution takes about 12 seconds to run (using CPython; PyPy runs it in about 3 seconds).
 
 ## Generate code for a new day
 ```sh
