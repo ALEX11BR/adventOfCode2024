@@ -14,7 +14,7 @@ if __name__ == "__main__":
             nd[k % 2] += (-1) ** (k // 2)
             if nd[0] >= len(text) or nd[1] >= len(text[0]) or nd[k % 2] < 0:
                 continue
-            ans.append(tuple(nd))
+            ans.append((nd[0], nd[1]))
         return ans
 
     def dfs(node: tuple[int, int]) -> int:

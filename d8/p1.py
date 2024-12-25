@@ -19,7 +19,7 @@ if __name__ == "__main__":
             return
         points.add(point)
 
-    freqs = defaultdict(list)
+    freqs: defaultdict[str, list[tuple[int, int]]] = defaultdict(list)
     for i in range(len(text)):
         for j in range(len(text[0])):
             if text[i][j] != ".":

@@ -21,12 +21,12 @@ def simulate_rock(rock: str) -> list[str]:
 if __name__ == "__main__":
     nums = input().strip().split(" ")
 
-    stones = defaultdict(int)
+    stones: defaultdict[str, int] = defaultdict(int)
     for num in nums:
         stones[num] += 1
 
     for _ in range(75):
-        new_stones = defaultdict(int)
+        new_stones: defaultdict[str, int] = defaultdict(int)
         for stone in stones:
             for new_stone in simulate_rock(stone):
                 new_stones[new_stone] += stones[stone]

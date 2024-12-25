@@ -3,16 +3,17 @@
 In every `d{day}` folder there are my solutions to that day's problems.
 The day's input sits in that folder in a file named `input` (I don't publish them here).
 
-The programs get their input from a stdin (that might require an end of stream).
+The console programs get their input from a stdin (that might require an end of stream).
 This can be accomplished, for instance, by:
 
 - redirecting the input file into the program,
 - heredocs,
-- typing the input followed by a `^D`.
+- typing the input followed by a `Ctrl-D` on unix, `Ctrl-Z Enter` on windows.
 
 Most solutions:
 - were submitted within 24 hour of the problem's publishing,
 - use only Python's standard library,
+- make the `mypy` type checker happy, having full annotations for functions
 - run pretty quickly (<1 second).
 
 The solutions for which this doesn't fully apply have a comment at the beginning with details.

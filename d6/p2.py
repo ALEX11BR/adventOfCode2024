@@ -21,10 +21,11 @@ if __name__ == "__main__":
         curr_point = start
         current_delta = 0
 
-        def get_next_pos():
+        def get_next_pos() -> tuple[int, int]:
             return (curr_point[0] + deltas[current_delta][0], curr_point[1] + deltas[current_delta][1])
 
-        poses = set()
+        poses: set[tuple[int, int]] = set()
+        full_poses = set()
         while True:
             while True:
                 next_pos = get_next_pos()
@@ -37,9 +38,9 @@ if __name__ == "__main__":
             if obstacle is None:
                 poses.add(next_pos)
             else:
-                if (next_pos, current_delta) in poses:
+                if (next_pos, current_delta) in full_poses:
                     return set(), True
-                poses.add((next_pos, current_delta))
+                full_poses.add((next_pos, current_delta))
 
             curr_point = next_pos
 
